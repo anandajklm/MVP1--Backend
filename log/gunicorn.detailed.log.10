@@ -1,0 +1,80 @@
+[2023-12-11 11:23:31,258] ERROR log_exception() L1449 Exception on /cadastro [POST] - call_trace=C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\app.py", line 36, in add_cadastro
+    cadastro = Cadastro(
+               ^^^^^^^^^
+TypeError: __init__() got an unexpected keyword argument 'data_cadastro'
+[2023-12-11 11:23:31,277] INFO _log() L225  192.168.0.7 - - [11/Dec/2023 11:23:31] "[35m[1mPOST /cadastro HTTP/1.1[0m" 500 - - call_trace=C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-11 11:33:49,929] ERROR log_exception() L1449 Exception on /cadastro [POST] - call_trace=C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\app.py", line 36, in add_cadastro
+    cadastro = Cadastro(
+               ^^^^^^^^^
+TypeError: __init__() got an unexpected keyword argument 'data_cadastro'
+[2023-12-11 11:33:49,931] INFO _log() L225  192.168.0.7 - - [11/Dec/2023 11:33:49] "[35m[1mPOST /cadastro HTTP/1.1[0m" 500 - - call_trace=C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-11 11:37:35,729] ERROR log_exception() L1449 Exception on /cadastro [POST] - call_trace=C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\app.py", line 36, in add_cadastro
+    cadastro = Cadastro(
+               ^^^^^^^^^
+TypeError: __init__() got an unexpected keyword argument 'data_cadastro'
+[2023-12-11 11:37:35,733] INFO _log() L225  192.168.0.7 - - [11/Dec/2023 11:37:35] "[35m[1mPOST /cadastro HTTP/1.1[0m" 500 - - call_trace=C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-11 11:38:21,215] INFO _log() L225  192.168.0.7 - - [11/Dec/2023 11:38:21] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-11 11:38:21,259] INFO _log() L225  192.168.0.7 - - [11/Dec/2023 11:38:21] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-11 11:38:21,266] INFO _log() L225  192.168.0.7 - - [11/Dec/2023 11:38:21] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-11 11:38:21,268] INFO _log() L225  192.168.0.7 - - [11/Dec/2023 11:38:21] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\werkzeug\_internal.py L225 
+[2023-12-11 11:38:21,528] INFO _log() L225  192.168.0.7 - - [11/Dec/2023 11:38:21] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\anand\OneDrive\Documentos\pos\desenvolvimento-full-stack-main\desenvolvimento-full-stack-basico\aula-3\MVP1\mvp1_back\env\Lib\site-packages\werkzeug\_internal.py L225 
